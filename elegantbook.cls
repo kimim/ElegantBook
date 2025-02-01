@@ -406,7 +406,13 @@
 \RequirePackage[
   backend=\ELEGANT@bibend,
   citestyle=\ELEGANT@citestyle,
-  bibstyle=\ELEGANT@bibstyle]{biblatex}
+  bibstyle=\ELEGANT@bibstyle,
+  hyperref=true,
+  backref=true,
+  maxcitenames=3,
+  url=true,
+  natbib=true,
+  sorting=none]{biblatex}
 
 \ifdefstring{\ELEGANT@lang}{cn}{
   \renewcommand{\baselinestretch}{1.3}
@@ -1333,7 +1339,7 @@
             anchor=south east,
             outer sep=0pt,
             inner sep=0pt] at ($(current page.south east) +(-0.8in,1.5in)$) {
-              \ifcsname @logo\endcsname\includegraphics[width=4.2cm]{\@logo}\fi};
+              \ifcsname @logo\endcsname\includegraphics[width=8cm]{\@logo}\fi};
     \end{pgfonlayer}
   \end{tikzpicture}
   \end{minipage}
