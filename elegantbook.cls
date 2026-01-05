@@ -1475,12 +1475,15 @@
 }{
   \renewcommand{\cftchappresnum}{\chaptername\space}
   \renewcommand{\cftchapaftersnum}{\space}
-  \setlength{\cftchapnumwidth}{\widthof{\textbf{Appendix~9}}}
+  \setlength{\cftchapnumwidth}{\widthof{\textbf{Appendix~99~~}}}
   \g@addto@macro\appendix{%
     \addtocontents{toc}{%
       \protect\renewcommand{\protect\cftchappresnum}{\appendixname\space}%
       \protect\renewcommand{\protect\cftchapaftersnum}{}%
-      \setlength{\cftchapnumwidth}{\widthof{\textbf{Appendix~999}}}
+      \setlength{\cftchapnumwidth}{\widthof{\textbf{Appendix~999~~
+        \end{#1}
+
+      }}}
     }%
   }
 }
